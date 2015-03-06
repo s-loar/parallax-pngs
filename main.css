@@ -1,3 +1,11 @@
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1;
+}
+
 .horse {
 	width: 250px;
 	height: 403px;
@@ -7,16 +15,22 @@
 
 .first-horse {
 	left: 0px;
+	z-index: 200;
 }
 
 .second-horse {
-	left: 250px;
+	left: 200px;
 }
 
 .third-horse {
-	left: 500px;
+	left: 410px;
+	z-index: 1000;
 }
 
 .fourth-horse {
-	left: 750px;
+	left: 630px;
+}
+
+.filler {
+	margin-top: 1000px;
 }
