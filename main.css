@@ -1,0 +1,22 @@
+.horse {
+	width: 250px;
+	height: 403px;
+	top: 500px;
+	position: absolute;
+}
+
+.first-horse {
+	left: 0px;
+}
+
+.second-horse {
+	left: 250px;
+}
+
+.third-horse {
+	left: 500px;
+}
+
+.fourth-horse {
+	left: 750px;
+}

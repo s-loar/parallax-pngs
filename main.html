@@ -1,0 +1,38 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<link rel="stylesheet" type="text/css" href="main.css">
+			<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		</head>
+		<body>
+			<h1>Parallax Scrolling Horses</h1>
+			<div class="horse first-horse" data-scroll-speed='2'>
+				<img src='horse.png' />
+			</div>
+
+			<div class="horse second-horse" data-scroll-speed='6'>
+				<img src='horse.png' />
+			</div>
+
+			<div class="horse third-horse" data-scroll-speed='1'>
+				<img src='horse.png' />
+			</div>
+
+			<div class="horse fourth-horse" data-scroll-speed='2'>
+				<img src='horse.png' />
+			</div>
+
+			<script>
+				var myHorses = $('.horse');
+				$(window).scroll(function(){
+					var scrollTop = $(window).scrollTop();
+					myHorses.each(function(){
+						var $this = $(this);
+						var scrollspeed = parseInt($this.data('scroll-speed')),
+							offset = - scrollTop / scrollspeed;
+						$this.css('transform', 'translateY(' + offset + 'px)');
+					});
+				});
+			</script>
+		</body>
+	</html>
